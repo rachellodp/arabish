@@ -49,7 +49,7 @@ def transliterate(sentence, verbose=False):
     candidates = list(transliterate_word(word))
     if verbose:
       for word in candidates:
-        print word
+        print (word)
     ret.append(sort_by_frequency(candidates)[0])
   return ' '.join(ret)
 
